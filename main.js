@@ -6,7 +6,7 @@ const imgReprovado =
 const atividades = [];
 const notas = [];
 const spanAprovado = '<span class="resultado aprovado">Aprovado</span>';
-const spanReprovado = '<span class="resultado Reprovado">Reprovado</span>';
+const spanReprovado = '<span class="resultado reprovado">Reprovado</span>';
 const notaMinima = parseFloat(prompt('Digite a nota mínima:'));
 
 let linhas = ``;
@@ -27,7 +27,7 @@ function adicionaLinha() {
     alert(`A atividade: ${inputNomeAtividade.value} já foi inserida`);
   } else {
     atividades.push(inputNomeAtividade.value);
-    notas.push(parseFloat(inputNomeAtividade.value));
+    notas.push(parseFloat(inputNotaAtividade.value));
 
     let linha = '<tr>';
     linha += `<td>${inputNomeAtividade.value}</td>`;
